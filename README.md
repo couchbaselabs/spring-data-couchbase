@@ -9,11 +9,12 @@ Currently, you need to checkout the source code from here and build it on your o
 
 ```xml
 <dependencies>
-<dependency>
-  <groupId>com.couchbase</groupId>
-  <artifactId>spring-data-couchbase</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
-</dependency>
+  <dependency>
+    <groupId>com.couchbase</groupId>
+    <artifactId>spring-data-couchbase</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+  </dependency>
+</dependencies>
 ```
 
 It is distributed from the [Couchbase Maven Repository](http://files.couchbase.com/maven2/):
