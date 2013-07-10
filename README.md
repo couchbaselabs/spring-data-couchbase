@@ -111,7 +111,7 @@ CouchbaseClient client = context.getBean("couchbaseClient", CouchbaseClient.clas
 
 Caching with Couchbase in Spring
 --------------------------------
-[Caching in Spring](http://static.springsource.org/spring/docs/3.1.x/spring-framework-reference/html/cache.html) mainly works bei annotating your cachable entities with the `@Cacheable` annotation. If you give it only a name like `@Cacheable("default")`, then it tries to use the `default` cache configuration. Before we can use it though, we need to define it.
+[Caching in Spring](http://static.springsource.org/spring/docs/3.1.x/spring-framework-reference/html/cache.html) mainly works by annotating your cachable entities with the `@Cacheable` annotation. If you give it only a name like `@Cacheable("default")`, then it tries to use the `default` cache configuration. Before we can use it though, we need to define it.
 
 Look at the folling bean configuration, which we'll break down afterwards:
 
