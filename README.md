@@ -9,11 +9,12 @@ Currently, you need to checkout the source code from here and build it on your o
 
 ```xml
 <dependencies>
-<dependency>
-  <groupId>couchbase</groupId>
-  <artifactId>spring-data-couchbase</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
-</dependency>
+  <dependency>
+    <groupId>com.couchbase</groupId>
+    <artifactId>spring-data-couchbase</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+  </dependency>
+</dependencies>
 ```
 
 It is distributed from the [Couchbase Maven Repository](http://files.couchbase.com/maven2/):
@@ -34,7 +35,7 @@ It is distributed from the [Couchbase Maven Repository](http://files.couchbase.c
 Currently, the project depends on the following packages:
 
  * couchbase.couchbase-client: 1.1.2
- * org.springframework.spring-context: 3.2.1.RELEASE
+ * org.springframework.spring-context: 3.2.3.RELEASE
  * cglib.cglib: 2.2.2
  * (When Testing) junit.junit: 4.11
 
@@ -110,7 +111,7 @@ CouchbaseClient client = context.getBean("couchbaseClient", CouchbaseClient.clas
 
 Caching with Couchbase in Spring
 --------------------------------
-[Caching in Spring](http://static.springsource.org/spring/docs/3.1.x/spring-framework-reference/html/cache.html) mainly works bei annotating your cachable entities with the `@Cacheable` annotation. If you give it only a name like `@Cacheable("default")`, then it tries to use the `default` cache configuration. Before we can use it though, we need to define it.
+[Caching in Spring](http://static.springsource.org/spring/docs/3.1.x/spring-framework-reference/html/cache.html) mainly works by annotating your cachable entities with the `@Cacheable` annotation. If you give it only a name like `@Cacheable("default")`, then it tries to use the `default` cache configuration. Before we can use it though, we need to define it.
 
 Look at the folling bean configuration, which we'll break down afterwards:
 
@@ -211,7 +212,7 @@ We load up our `beans.xml` and get the referenced `bookstore` object out of it. 
 Be aware of the following things:
 
  * Objects are stored as serialized Java objects, not as JSON. You won't be able to read the values through the UI.
- * If you use more than one argument, Spring will create a random key for it (see the [docs](http://static.springsource.org/spring/docs/3.1.x/spring-framework-reference/html/cache.html)).
+ * If you use more than one argument, Spring will create a random key for it (see the [docs](http://static.springsource.org/spring/docs/3.2.x/spring-framework-reference/html/cache.html)).
  * There are lots of other options available, again read the documentation for it.
 
 Currently, the customization context is very limited, but there is more functionality planned in the future. We'd love to hear your ideas and needs!
