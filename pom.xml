@@ -26,7 +26,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <couchbase>1.1.6</couchbase>
-    <spring>3.2.3.RELEASE</spring>
+    <spring>3.2.18.RELEASE</spring>
   </properties>
 
   <repositories>
